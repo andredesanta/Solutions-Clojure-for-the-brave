@@ -1,7 +1,6 @@
 (ns solutions.core
   (:gen-class))
 
-
 (def asym-hobbit-body-parts [
                              {:name  "head" :size 3}
                              {:name  "left-eye" :size 1}
@@ -35,9 +34,9 @@
 ;Ex4
 (defn mapset
   ([f coll]
-   (set(map f coll)))
+   (set (map f coll)))
   ([f c1 c2]
-   (set(map f c1 c2))))
+   (set (map f c1 c2))))
 
 ;Ex5 and 6
 (defn erase-and-replace
@@ -45,7 +44,6 @@
   (if (clojure.string/includes? full-string erase-part)
     (clojure.string/replace full-string erase-part replace-part)
     (full-string)))
-
 
 (defn matching-part-n
   [part n]
